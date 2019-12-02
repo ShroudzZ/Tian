@@ -1,0 +1,26 @@
+@angle:-45deg;
+@color1:#ee7752;
+@color2:#e73c7e;
+@color3:#23a6d5;
+@color4:#23d5ab;
+@animationTime:10s;
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(@angle,@color1,@color2,@color3,@color4);
+    background-size: 500% 500%;
+    animation:animationBG @animationTime infinite;
+    @keyframes animationBG {
+        0%{
+             background-position: 0% 50%;
+        }
+        50%{
+            background-position:100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+}
