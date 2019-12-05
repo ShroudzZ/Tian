@@ -9,6 +9,8 @@
     <Gradient />
     <TodoList />
     <TodoDetail />
+    <TodoEditing />
+    <FloatingButton />
   </div>
 
 </template>
@@ -19,6 +21,8 @@ import Avatar from "../Avatar";
 import Gradient from "../Gradient";
 import TodoList from "../Todolist";
 import TodoDetail from "../TodoDetail";
+import TodoEditing from "../TodoEditing";
+import FloatingButton from "../FloatingButton";
 export default {
   name: "Home",
   components: {
@@ -26,7 +30,9 @@ export default {
     Avatar,
     Gradient,
     TodoList,
-    TodoDetail
+    TodoDetail,
+    TodoEditing,
+    FloatingButton
   },
   data() {
     return {};
